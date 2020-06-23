@@ -11,14 +11,24 @@
   margin: 0 auto; }
 
 .navigation {
-  background-color: #59638f;
-  height: 50px;
-  line-height: 50px; }
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  background-color: #59638f; }
   .navigation__section-lists {
     display: flex;
     justify-content: space-around; }
     .navigation__section-lists__link {
-      font-size: 20px; }
+      font-size: 20px;
+      padding: 10px;
+      display: inline-block;
+      transition: background-color 0.3s, color 0.3s; }
+    .navigation__section-lists__link:hover {
+      background-color: #fff;
+      color: #59638f; }
+
+.main-container {
+  padding-top: 83px; }
 
 .site-title {
   height: 500px;
@@ -38,7 +48,8 @@
       font-size: 70px; }
     .profile__content-box__text {
       width: 70%;
-      margin-left: 30px; }
+      margin-left: 30px;
+      line-height: 25px; }
 
 .my-works {
   padding: 50px 0 80px 0;
@@ -96,11 +107,14 @@
     display: flex;
     justify-content: center; }
     .account__list__item {
-      margin-left: 50px; }
+      margin-left: 50px;
+      transition: color 0.3s; }
       .account__list__item i {
         font-size: 50px; }
     .account__list__item:first-child {
       margin-left: 0; }
+    .account__list__item:hover {
+      color: #67cfff; }
 
 footer {
   padding: 20px;
