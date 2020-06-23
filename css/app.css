@@ -24,6 +24,7 @@
       display: inline-block;
       transition: background-color 0.3s, color 0.3s; }
     .navigation__section-lists__link:hover {
+      cursor: pointer;
       background-color: #fff;
       color: #59638f; }
 
