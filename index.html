@@ -3,13 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="このサイトは北川史晃のポートフォリオサイトです。">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="css/destyle.css">
   <link rel="stylesheet" href="css/app.css">
-  <title>Document</title>
+  <title>Fumiaki's portfolio</title>
 </head>
-<body>
-  <div class="hoge">
-    This is my portfolio-2
-  </div>
+<body class="main-page">
+  <header class="navigation">
+    <div class="inner">
+      <div class="navigation__section-lists">
+        <a href="" class="navigation__section-lists__link">About me</a>
+        <a href="" class="navigation__section-lists__link">My works</a>
+        <a href="" class="navigation__section-lists__link">My skills</a>
+        <a href="" class="navigation__section-lists__link">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="site-title">
+      <div class="inner">
+        <h1 class= "section-title">Fumiaki's portfolio</h1>
+      </div>
+    </div>
+  
+    <section class="profile">
+      <div class="inner">
+        <h3 class="section-title">About me</h3>
+        <div class="profile__content-box">
+          <i class="fas fa-user-circle"></i>
+          <p class="profile__content-box__text">
+            高校卒業後、京都外国語専門学校の英米語学科に進学し2018年に卒業しました。
+            <br>
+            その後、大阪デザイナー専門学校に進学し、グラフィックデザイン学科に進学しましたが家庭の事情で2018年9月に中途退学しています。
+            <br>
+            現在はTECH::EXPERTで学んだプログラミングの知識を生かして、フロントエンジニア/コーダーとして経験を積んでいきたいと考えています。
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="my-works">
+      <div class="inner">
+        <h3 class="section-title">My works</h3>
+        <ul class="my-works__list">
+          <li class="my-works__list__item">
+            <img src="images/search-books.jpg" alt="楽天APIアプリ">
+          </li>
+          <li class="my-works__list__item">
+            <img src="images/site_for_temple_image.jpg" alt="オリジナルサイト">
+          </li>
+          <li class="my-works__list__item">
+            <img src="images/cd6a627796891e75e7d5c35ec63cf4f2.jpg" alt="スクールの最終課題">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="my-skills">
+      <div class="inner">
+        <h3 class="section-title">My skills</h3>
+        <div class="my-skills__list">
+          <div class="my-skills__list__item">
+            <h4 class="my-skills__list__item__title">フロントエンド</h4>
+            <ul>
+              <li>HTML5/CSS3</li>
+              <li>Sass</li>
+              <li>Gulp</li>
+              <li>Webpack</li>
+              <li>Javascript</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+          <div class="my-skills__list__item">
+            <h4 class="my-skills__list__item__title">バックエンド</h4>
+            <ul>
+              <li>Ruby</li>
+              <li>Ruby on Rails</li>
+            </ul>
+          </div>
+          <div class="my-skills__list__item">
+            <h4 class="my-skills__list__item__title">インフラ</h4>
+            <ul>
+              <li>AWS(EC2・S3)</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <div class="my-skills__list__item">
+            <h4 class="my-skills__list__item__title">ツール</h4>
+            <ul>
+              <li>Slack</li>
+              <li>Github</li>
+              <li>Trello</li>
+              <li>Visual Studio Code</li>
+              <li>sourcetree</li>
+              <li>Github Desktop</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="account">
+      <div class="inner">
+        <h4 class="section-title">Account</h4>
+        <div class="account__list">
+          <a href="" class="account__list__item">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="" class="account__list__item">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="inner">
+      <p>Copyright©Fumiaki Kitagawa. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

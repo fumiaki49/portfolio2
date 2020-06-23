@@ -1,3 +1,108 @@
-.hoge {
-  background-color: blue;
-  color: white; }
+.main-page {
+  background-color: #e2f3fa;
+  color: #fff; }
+
+.section-title {
+  text-align: center;
+  font-size: 30px; }
+
+.inner {
+  width: 1100px;
+  margin: 0 auto; }
+
+.navigation {
+  background-color: #59638f;
+  height: 50px;
+  line-height: 50px; }
+  .navigation__section-lists {
+    display: flex;
+    justify-content: space-around; }
+    .navigation__section-lists__link {
+      font-size: 20px; }
+
+.site-title {
+  height: 500px;
+  line-height: 500px;
+  color: #67cfff; }
+  .site-title .section-title {
+    font-size: 40px; }
+
+.profile {
+  padding: 50px 0;
+  background-color: #67cfff; }
+  .profile__content-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; }
+    .profile__content-box i {
+      font-size: 70px; }
+    .profile__content-box__text {
+      width: 70%;
+      margin-left: 30px; }
+
+.my-works {
+  padding: 50px 0 80px 0;
+  background-color: #384850; }
+  .my-works__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; }
+    .my-works__list__item {
+      margin-left: 100px;
+      width: 300px;
+      height: 230px; }
+      .my-works__list__item img {
+        width: 100%;
+        height: 100%; }
+    .my-works__list__item:nth-child(3n+1) {
+      margin-left: 0; }
+
+.my-skills {
+  padding: 50px 0 80px 0;
+  background-color: #67cfff;
+  color: #fff; }
+  .my-skills__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; }
+    .my-skills__list__item {
+      background-color: #fff;
+      color: #67cfff;
+      text-align: center;
+      margin-left: 100px;
+      margin-top: 70px;
+      padding-top: 25px;
+      width: 300px;
+      height: 300px; }
+      .my-skills__list__item__title {
+        font-size: 20px;
+        font-weight: bold; }
+      .my-skills__list__item ul {
+        margin-top: 15px; }
+        .my-skills__list__item ul li {
+          margin-top: 10px; }
+        .my-skills__list__item ul li:first-child {
+          margin-top: 0; }
+    .my-skills__list__item:nth-child(-n+3) {
+      margin-top: 0; }
+    .my-skills__list__item:nth-child(3n+1) {
+      margin-left: 0; }
+
+.account {
+  padding: 50px 0 80px 0;
+  background-color: #384850; }
+  .account__list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; }
+    .account__list__item {
+      margin-left: 50px; }
+      .account__list__item i {
+        font-size: 50px; }
+    .account__list__item:first-child {
+      margin-left: 0; }
+
+footer {
+  padding: 20px;
+  background-color: #59638f;
+  text-align: center; }
