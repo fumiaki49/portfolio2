@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="このサイトは北川史晃のポートフォリオサイトです。">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="css/destyle.css">
   <link rel="stylesheet" href="css/app.css">
+  <script src="js/main.js"></script>
   <title>Fumiaki's portfolio</title>
 </head>
 <body class="main-page">
   <header class="navigation">
     <div class="inner">
       <div class="navigation__section-lists">
-        <a href="" class="navigation__section-lists__link">About me</a>
-        <a href="" class="navigation__section-lists__link">My works</a>
-        <a href="" class="navigation__section-lists__link">My skills</a>
-        <a href="" class="navigation__section-lists__link">Account</a>
+        <div class="navigation__section-lists__link menu-btn">About me</div>
+        <div class="navigation__section-lists__link menu-btn">My works</div>
+        <div class="navigation__section-lists__link menu-btn">My skills</div>
+        <div class="navigation__section-lists__link menu-btn">Account</div>
       </div>
     </div>
   </header>
@@ -28,7 +30,7 @@
       </div>
     </div>
   
-    <section class="profile">
+    <section class="profile scroll-target">
       <div class="inner">
         <h3 class="section-title">About me</h3>
         <div class="profile__content-box">
@@ -44,7 +46,7 @@
       </div>
     </section>
   
-    <section class="my-works">
+    <section class="my-works scroll-target">
       <div class="inner">
         <h3 class="section-title">My works</h3>
         <ul class="my-works__list">
@@ -61,7 +63,7 @@
       </div>
     </section>
 
-    <section class="my-skills">
+    <section class="my-skills scroll-target">
       <div class="inner">
         <h3 class="section-title">My skills</h3>
         <div class="my-skills__list">
@@ -104,7 +106,8 @@
         </div>
       </div>
     </section>
-    <section class="account">
+
+    <section class="account scroll-target">
       <div class="inner">
         <h4 class="section-title">Account</h4>
         <div class="account__list">
