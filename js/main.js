@@ -9,8 +9,10 @@ $(function () {
     var modalData = $(this).data('modal-link');
     var sameItem = document.querySelector('.' + modalData);
     $(sameItem).fadeIn();
+    $('html, body').addClass('cancel-scroll');
   })
   $('.modal__content-box__close-btn').click(function() {
     $('.modal').fadeOut();
+    $('html, body').removeClass('cancel-scroll');
   });
 });
