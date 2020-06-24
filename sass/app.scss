@@ -5,6 +5,7 @@
 
 .section-title {
   text-align: center;
+  font-weight: bold;
   font-size: 30px;
 }
 
@@ -13,11 +14,16 @@
   margin: 0 auto;
 }
 
+.cancel-scroll {
+  overflow: hidden;
+}
+
 .navigation {
   padding: 20px;
   width: 100%;
   position: fixed;
   background-color: #59638f;
+  z-index: 50;
   &__section-lists {
     display: flex;
     justify-content: space-around;
@@ -44,7 +50,7 @@
   line-height: 500px;
   color: #67cfff;
   & .section-title {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -82,6 +88,10 @@
         height: 100%;
       }
     }
+    &__item:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
     &__item:nth-child(3n+1) {
       margin-left: 0;
     }
@@ -101,6 +111,7 @@
     width: 800px;
     margin: 0 auto;
     margin-top: 5%;
+    padding-bottom: 20px;
     background-color: #fff;
     color: #67cfff;
     &__close-btn {
@@ -111,12 +122,18 @@
       padding: 10px 24px;
       font-size: 25px;
     }
+    &__close-btn i:hover {
+      cursor: pointer;
+      color: #67cfff;
+    }
     &__app-image img{
       width: 100%;
       height: 100%;
     }
     &__explanation-box {
+      border-top: 1px solid #000000;
       padding: 20px;
+      color: #000000;
       &__title {
         font-size: 25px;
         text-align: center;
@@ -124,6 +141,23 @@
       &__text {
         margin-top: 20px;
         font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    &__link-box {
+      display: flex;
+      justify-content: center;
+      &__link {
+        margin-left: 15px;
+        padding: 5px;
+        transition: 0.3s;
+      }
+      &__link:first-child {
+        margin-left: 0;
+      }
+      &__link:hover {
+        color: #fff;
+        background-color: #67cfff;
       }
     }
   }
