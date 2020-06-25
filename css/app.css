@@ -14,6 +14,15 @@
 .cancel-scroll {
   overflow: hidden; }
 
+.icon {
+  font-size: 70px; }
+
+.explanation-text {
+  width: 70%;
+  margin-left: 30px;
+  line-height: 25px;
+  letter-spacing: 2px; }
+
 .navigation {
   padding: 20px;
   width: 100%;
@@ -38,10 +47,13 @@
 
 .site-title {
   height: 500px;
-  line-height: 500px;
-  color: #67cfff; }
+  color: #67cfff;
+  padding: 180px 0 200px 0; }
   .site-title .section-title {
-    font-size: 50px; }
+    font-size: 50px;
+    letter-spacing: 2px; }
+    .site-title .section-title span {
+      font-size: 25px; }
 
 .profile {
   padding: 50px 0;
@@ -50,12 +62,12 @@
     margin-top: 30px;
     display: flex;
     justify-content: center; }
-    .profile__content-box i {
-      font-size: 70px; }
-    .profile__content-box__text {
-      width: 70%;
-      margin-left: 30px;
-      line-height: 25px; }
+    .profile__content-box .name {
+      font-size: 20px;
+      margin-top: 15px;
+      padding-bottom: 5px;
+      display: block;
+      border-bottom: 3px solid; }
 
 .my-works {
   padding: 50px 0 80px 0;
@@ -96,10 +108,8 @@
     .modal__content-box__close-btn {
       background-color: rgba(6, 38, 51, 0.876);
       color: #fff;
-      width: 100%;
-      text-align: right;
       padding: 10px 24px;
-      font-size: 25px; }
+      font-size: 30px; }
     .modal__content-box__close-btn i:hover {
       cursor: pointer;
       color: #67cfff; }
@@ -160,6 +170,10 @@
       margin-top: 0; }
     .my-skills__list__item:nth-child(3n+1) {
       margin-left: 0; }
+  .my-skills__explanation-box {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center; }
 
 .account {
   padding: 50px 0 80px 0;

@@ -18,6 +18,18 @@
   overflow: hidden;
 }
 
+.icon {
+  font-size: 70px;
+}
+
+.explanation-text {
+  width: 70%;
+  margin-left: 30px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+//ナビゲーション
 .navigation {
   padding: 20px;
   width: 100%;
@@ -41,19 +53,26 @@
   }
 }
 
+// メイン
 .main-container {
   padding-top: 83px;
 }
 
+// タイトル
 .site-title {
   height: 500px;
-  line-height: 500px;
   color: #67cfff;
+  padding: 180px 0 200px 0;
   & .section-title {
     font-size: 50px;
+    letter-spacing: 2px;
+    & span {
+      font-size: 25px;
+    }
   }
 }
 
+// プロフィール
 .profile {
   padding: 50px 0;
   background-color: #67cfff;
@@ -61,17 +80,17 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    & i {
-      font-size: 70px;
-    }
-    &__text {
-      width: 70%;
-      margin-left: 30px;
-      line-height: 25px;
+    & .name {
+      font-size: 20px;
+      margin-top: 15px;
+      padding-bottom: 5px;
+      display: block;
+      border-bottom: 3px solid;
     }
   }
 }
 
+// 作品一覧
 .my-works {
   padding: 50px 0 80px 0;
   background-color: #384850;
@@ -98,6 +117,7 @@
   }
 }
 
+// モーダル
 .modal {
   display: none;
   width: 100%;
@@ -117,10 +137,8 @@
     &__close-btn {
       background-color: rgba(6, 38, 51, 0.876);
       color: #fff;
-      width: 100%;
-      text-align: right;
       padding: 10px 24px;
-      font-size: 25px;
+      font-size: 30px;
     }
     &__close-btn i:hover {
       cursor: pointer;
@@ -163,6 +181,7 @@
   }
 }
 
+// スキル一覧
 .my-skills {
   padding: 50px 0 80px 0;
   background-color: #67cfff;
@@ -201,8 +220,14 @@
       margin-left: 0;
     }
   }
+  &__explanation-box {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
+// アカウント一覧
 .account {
   padding: 50px 0 80px 0;
   background-color: #384850;
@@ -226,6 +251,7 @@
   }
 }
 
+// フッター
 footer {
   padding: 20px;
   background-color: #59638f;
