@@ -2,17 +2,16 @@
   background-color: #e2f3fa;
   color: #fff; }
 
-.section-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px; }
+.cancel-scroll {
+  overflow: hidden; }
+
+.full-size {
+  width: 100%;
+  height: 100%; }
 
 .inner {
   width: 1100px;
   margin: 0 auto; }
-
-.cancel-scroll {
-  overflow: hidden; }
 
 .icon {
   font-size: 70px; }
@@ -23,19 +22,48 @@
   line-height: 25px;
   letter-spacing: 2px; }
 
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; }
+
+.my-works__list, .my-skills__list, .navigation__section-lists,
+.profile__content-box, .modal__content-box__link-box, .my-skills__explanation-box, .account__list {
+  display: flex; }
+
+.my-works__list, .my-skills__list {
+  flex-wrap: wrap; }
+
+.profile__content-box, .modal__content-box__link-box, .my-skills__explanation-box, .account__list {
+  justify-content: center; }
+
+.my-works__list, .my-skills__list, .profile__content-box, .account__list {
+  margin-top: 30px; }
+
+.navigation, .footer {
+  background-color: #59638f; }
+
+.profile, .my-skills {
+  background-color: #67cfff; }
+
+.my-works, .account {
+  background-color: #384850; }
+
 .navigation {
-  padding: 20px;
   width: 100%;
+  padding: 20px;
   position: fixed;
-  background-color: #59638f;
   z-index: 50; }
   .navigation__section-lists {
-    display: flex;
     justify-content: space-around; }
     .navigation__section-lists__link {
       font-size: 20px;
       padding: 10px;
-      display: inline-block;
       transition: background-color 0.3s, color 0.3s; }
     .navigation__section-lists__link:hover {
       cursor: pointer;
@@ -56,43 +84,29 @@
       font-size: 25px; }
 
 .profile {
-  padding: 50px 0;
-  background-color: #67cfff; }
-  .profile__content-box {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center; }
-    .profile__content-box .name {
-      font-size: 20px;
-      margin-top: 15px;
-      padding-bottom: 5px;
-      display: block;
-      border-bottom: 3px solid; }
+  padding: 50px 0; }
+  .profile .name {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 3px solid; }
 
 .my-works {
-  padding: 50px 0 80px 0;
-  background-color: #384850; }
-  .my-works__list {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap; }
-    .my-works__list__item {
-      margin-left: 100px;
-      width: 300px;
-      height: 230px; }
-      .my-works__list__item img {
-        width: 100%;
-        height: 100%; }
-    .my-works__list__item:hover {
-      cursor: pointer;
-      opacity: 0.7; }
-    .my-works__list__item:nth-child(3n+1) {
-      margin-left: 0; }
+  padding: 50px 0 80px 0; }
+  .my-works__list__item {
+    margin-left: 100px;
+    width: 300px;
+    height: 230px;
+    transition: opacity 0.3s; }
+  .my-works__list__item:hover {
+    cursor: pointer;
+    opacity: 0.7; }
+  .my-works__list__item:nth-child(3n+1) {
+    margin-left: 0; }
 
 .modal {
   display: none;
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -103,96 +117,68 @@
     margin: 0 auto;
     margin-top: 5%;
     padding-bottom: 20px;
-    background-color: #fff;
-    color: #67cfff; }
+    background-color: #fff; }
     .modal__content-box__close-btn {
       background-color: rgba(6, 38, 51, 0.876);
-      color: #fff;
       padding: 10px 24px;
       font-size: 30px; }
-    .modal__content-box__close-btn i:hover {
+    .modal__content-box i:hover {
       cursor: pointer;
       color: #67cfff; }
-    .modal__content-box__app-image img {
-      width: 100%;
-      height: 100%; }
     .modal__content-box__explanation-box {
-      border-top: 1px solid #000000;
+      border-top: 1px solid;
       padding: 20px;
       color: #000000; }
-      .modal__content-box__explanation-box__title {
-        font-size: 25px;
-        text-align: center; }
       .modal__content-box__explanation-box__text {
         margin-top: 20px;
-        font-size: 15px;
-        line-height: 20px; }
-    .modal__content-box__link-box {
-      display: flex;
-      justify-content: center; }
-      .modal__content-box__link-box__link {
-        margin-left: 15px;
-        padding: 5px;
-        transition: 0.3s; }
-      .modal__content-box__link-box__link:first-child {
-        margin-left: 0; }
-      .modal__content-box__link-box__link:hover {
-        color: #fff;
-        background-color: #67cfff; }
+        font-size: 15px; }
+    .modal__content-box__link-box__link {
+      color: #67cfff;
+      margin-left: 15px;
+      padding: 5px;
+      transition: background-color 0.3s, color 0.3s; }
+    .modal__content-box__link-box__link:first-child {
+      margin-left: 0; }
+    .modal__content-box__link-box__link:hover {
+      color: #fff;
+      background-color: #67cfff; }
 
 .my-skills {
-  padding: 50px 0 80px 0;
-  background-color: #67cfff;
-  color: #fff; }
-  .my-skills__list {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap; }
-    .my-skills__list__item {
-      background-color: #fff;
-      color: #67cfff;
-      text-align: center;
-      margin-left: 100px;
-      margin-top: 70px;
-      padding-top: 25px;
-      width: 300px;
-      height: 300px; }
-      .my-skills__list__item__title {
-        font-size: 20px;
-        font-weight: bold; }
-      .my-skills__list__item ul {
-        margin-top: 15px; }
-        .my-skills__list__item ul li {
-          margin-top: 10px; }
-        .my-skills__list__item ul li:first-child {
-          margin-top: 0; }
-    .my-skills__list__item:nth-child(-n+3) {
-      margin-top: 0; }
-    .my-skills__list__item:nth-child(3n+1) {
-      margin-left: 0; }
-  .my-skills__explanation-box {
+  padding: 50px 0 80px 0; }
+  .my-skills__list__item {
+    background-color: #fff;
+    color: #67cfff;
+    margin-left: 100px;
     margin-top: 70px;
-    display: flex;
-    justify-content: center; }
+    padding-top: 25px;
+    width: 300px;
+    height: 300px; }
+    .my-skills__list__item ul {
+      margin-top: 15px;
+      text-align: center; }
+      .my-skills__list__item ul li {
+        margin-top: 10px; }
+      .my-skills__list__item ul li:first-child {
+        margin-top: 0; }
+  .my-skills__list__item:nth-child(-n+3) {
+    margin-top: 0; }
+  .my-skills__list__item:nth-child(3n+1) {
+    margin-left: 0; }
+  .my-skills__explanation-box {
+    margin-top: 70px; }
 
 .account {
-  padding: 50px 0 80px 0;
-  background-color: #384850; }
-  .account__list {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center; }
-    .account__list__item {
-      margin-left: 50px;
-      transition: color 0.3s; }
-      .account__list__item i {
-        font-size: 50px; }
-    .account__list__item:first-child {
-      margin-left: 0; }
-    .account__list__item:hover {
-      color: #67cfff; }
+  padding: 50px 0 80px 0; }
+  .account__list__item {
+    margin-left: 50px;
+    transition: color 0.3s; }
+    .account__list__item i {
+      font-size: 50px; }
+  .account__list__item:first-child {
+    margin-left: 0; }
+  .account__list__item:hover {
+    color: #67cfff; }
 
-footer {
+.footer {
   padding: 20px;
-  background-color: #59638f;
   text-align: center; }

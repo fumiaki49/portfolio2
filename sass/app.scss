@@ -1,21 +1,23 @@
+@import './variable';
+
 .main-page {
-  background-color: rgb(226, 243, 250);
-  color: #fff;
+  background-color: #e2f3fa;
+  color: $whiteColor;
 }
 
-.section-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
+.cancel-scroll {
+  overflow: hidden;
+}
+
+//共通部分
+.full-size {
+  width: 100%;
+  height: 100%;
 }
 
 .inner {
   width: 1100px;
   margin: 0 auto;
-}
-
-.cancel-scroll {
-  overflow: hidden;
 }
 
 .icon {
@@ -29,26 +31,64 @@
   letter-spacing: 2px;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.my-works__list, .my-skills__list, .navigation__section-lists, 
+.profile__content-box, .modal__content-box__link-box, .my-skills__explanation-box, .account__list {
+  display: flex;
+}
+
+.my-works__list, .my-skills__list {
+  flex-wrap: wrap;
+}
+
+.profile__content-box, .modal__content-box__link-box, .my-skills__explanation-box, .account__list {
+  justify-content: center;
+}
+
+.my-works__list, .my-skills__list, .profile__content-box, .account__list {
+  margin-top: 30px;
+}
+
+.navigation, .footer {
+  background-color: $purpleColor;
+}
+
+.profile, .my-skills {
+  background-color: $themeColor;
+}
+
+.my-works, .account {
+  background-color: $darkBlueColor;
+}
+
 //ナビゲーション
 .navigation {
-  padding: 20px;
   width: 100%;
+  padding: 20px;
   position: fixed;
-  background-color: #59638f;
   z-index: 50;
   &__section-lists {
-    display: flex;
     justify-content: space-around;
     &__link {
       font-size: 20px;
       padding: 10px;
-      display: inline-block;
       transition: background-color 0.3s, color 0.3s;
     }
     &__link:hover {
       cursor: pointer;
-      background-color: #fff;
-      color: #59638f;
+      background-color: $whiteColor;
+      color: $purpleColor;
     }
   }
 }
@@ -61,7 +101,7 @@
 // タイトル
 .site-title {
   height: 500px;
-  color: #67cfff;
+  color: $themeColor;
   padding: 180px 0 200px 0;
   & .section-title {
     font-size: 50px;
@@ -75,37 +115,24 @@
 // プロフィール
 .profile {
   padding: 50px 0;
-  background-color: #67cfff;
-  &__content-box {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    & .name {
-      font-size: 20px;
-      margin-top: 15px;
-      padding-bottom: 5px;
-      display: block;
-      border-bottom: 3px solid;
-    }
+  & .name {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 3px solid;
   }
 }
 
 // 作品一覧
 .my-works {
   padding: 50px 0 80px 0;
-  background-color: #384850;
   &__list {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
     &__item {
       margin-left: 100px;
       width: 300px;
       height: 230px;
-      & img {
-        width: 100%;
-        height: 100%;
-      }
+      transition: opacity 0.3s;
     }
     &__item:hover {
       cursor: pointer;
@@ -120,8 +147,6 @@
 // モーダル
 .modal {
   display: none;
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -132,50 +157,37 @@
     margin: 0 auto;
     margin-top: 5%;
     padding-bottom: 20px;
-    background-color: #fff;
-    color: #67cfff;
+    background-color: $whiteColor;
     &__close-btn {
       background-color: rgba(6, 38, 51, 0.876);
-      color: #fff;
       padding: 10px 24px;
       font-size: 30px;
-    }
-    &__close-btn i:hover {
+    } & i:hover {
       cursor: pointer;
-      color: #67cfff;
-    }
-    &__app-image img{
-      width: 100%;
-      height: 100%;
+      color: $themeColor;
     }
     &__explanation-box {
-      border-top: 1px solid #000000;
+      border-top: 1px solid;
       padding: 20px;
-      color: #000000;
-      &__title {
-        font-size: 25px;
-        text-align: center;
-      }
+      color: $blackColor;
       &__text {
         margin-top: 20px;
         font-size: 15px;
-        line-height: 20px;
       }
     }
     &__link-box {
-      display: flex;
-      justify-content: center;
       &__link {
+        color: $themeColor;
         margin-left: 15px;
         padding: 5px;
-        transition: 0.3s;
+        transition: background-color 0.3s, color 0.3s;
       }
       &__link:first-child {
         margin-left: 0;
       }
       &__link:hover {
-        color: #fff;
-        background-color: #67cfff;
+        color: $whiteColor;
+        background-color: $themeColor;
       }
     }
   }
@@ -184,27 +196,18 @@
 // スキル一覧
 .my-skills {
   padding: 50px 0 80px 0;
-  background-color: #67cfff;
-  color: #fff;
   &__list {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
     &__item {
-      background-color: #fff;
-      color: #67cfff;
-      text-align: center;
+      background-color: $whiteColor;
+      color: $themeColor;
       margin-left: 100px;
       margin-top: 70px;
       padding-top: 25px;
       width: 300px;
       height: 300px;
-      &__title {
-        font-size: 20px;
-        font-weight: bold;
-      }
       & ul {
         margin-top: 15px;
+        text-align: center;
         & li {
           margin-top: 10px;
         }
@@ -222,19 +225,13 @@
   }
   &__explanation-box {
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
   }
 }
 
 // アカウント一覧
 .account {
   padding: 50px 0 80px 0;
-  background-color: #384850;
   &__list {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
     &__item {
       margin-left: 50px;
       transition: color 0.3s;
@@ -246,14 +243,13 @@
       margin-left: 0;
     }
     &__item:hover {
-      color: #67cfff;
+      color: $themeColor;
     }
   }
 }
 
 // フッター
-footer {
+.footer {
   padding: 20px;
-  background-color: #59638f;
   text-align: center;
 }
