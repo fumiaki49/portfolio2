@@ -138,9 +138,6 @@
       cursor: pointer;
       opacity: 0.7;
     }
-    &__item:nth-child(3n+1) {
-      margin-left: 0;
-    }
   }
 }
 
@@ -215,12 +212,6 @@
           margin-top: 0;
         }
       }
-    }
-    &__item:nth-child(-n+3) {
-      margin-top: 0;
-    }
-    &__item:nth-child(3n+1) {
-      margin-left: 0;
     }
   }
   &__explanation-box {

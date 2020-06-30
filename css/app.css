@@ -102,8 +102,6 @@
   .my-works__list__item:hover {
     cursor: pointer;
     opacity: 0.7; }
-  .my-works__list__item:nth-child(3n+1) {
-    margin-left: 0; }
 
 .modal {
   display: none;
@@ -160,10 +158,6 @@
         margin-top: 10px; }
       .my-skills__list__item ul li:first-child {
         margin-top: 0; }
-  .my-skills__list__item:nth-child(-n+3) {
-    margin-top: 0; }
-  .my-skills__list__item:nth-child(3n+1) {
-    margin-left: 0; }
   .my-skills__explanation-box {
     margin-top: 70px; }
 
