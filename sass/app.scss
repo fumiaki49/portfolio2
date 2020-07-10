@@ -84,6 +84,7 @@
       font-size: 20px;
       padding: 10px;
       transition: background-color 0.3s, color 0.3s;
+      user-select: none;
     }
     &__link:hover {
       cursor: pointer;
