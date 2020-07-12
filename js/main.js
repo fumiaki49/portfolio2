@@ -11,7 +11,7 @@ $(function () {
     $(sameItem).fadeIn();
     $('html, body').addClass('cancel-scroll');
   })
-  $('.modal__content-box__close-btn i').click(function() {
+  $('.modal__content-box__close-btn').click(function() {
     $('.modal').fadeOut();
     $('html, body').removeClass('cancel-scroll');
   });

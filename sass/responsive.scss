@@ -17,12 +17,17 @@
     width: 97%;
   }
 
-  .my-works__list__item, .my-skills__list__item {
-    width: 35%;
-    margin: 0 auto;
-    margin-top: 70px;
-    &:nth-child(-n+2) {
-      margin-top: 0;
+  .my-works__list, .my-skills__list {
+    justify-content: center;
+    &__item {
+      width: 35%;
+      margin-top: 70px;
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -69,6 +74,10 @@
     & span {
       font-size: 15px;
     }
+  }
+
+  .modal__content-box {
+    margin-top: 20%;
   }
 
   .name {
