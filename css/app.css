@@ -96,6 +96,7 @@
 .my-works {
   padding: 50px 0 80px 0; }
   .my-works__list__item {
+    margin-top: 50px;
     margin-left: 100px;
     width: 300px;
     height: 230px;
